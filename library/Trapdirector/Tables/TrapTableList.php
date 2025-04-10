@@ -68,7 +68,7 @@ class TrapTableList extends TrapTable
 				// Check missing value
 				if (property_exists($row, $rowkey)) 
 				{
-					$val = ($rowkey=='timestamp') ?  strftime('%T',$row->$rowkey) : $row->$rowkey;
+					$val = ($rowkey=='timestamp') ?  date('H:i:s',$row->$rowkey) : $row->$rowkey;
 				} else {
 					$val = '-';
 				}
