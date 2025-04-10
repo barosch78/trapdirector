@@ -139,7 +139,7 @@ class TrapTableHostList extends TrapTable
 
 	}
 
-    public function count()
+    public function count(): int
     {  
         $db=$this->db();
 		
