@@ -135,7 +135,7 @@ abstract class TrapTable implements Paginatable
         return $this->offset;
     }
 	
-	abstract function count();
+#	abstract function count();
 	
     public function getPaginator()
     {
