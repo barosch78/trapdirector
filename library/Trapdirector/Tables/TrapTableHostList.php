@@ -112,7 +112,7 @@ class TrapTableHostList extends TrapTable
 				// Check missing value
 				if (property_exists($row, $rowkey)) 
 				{
-					$val = ($rowkey=='last_sent') ?  strftime('%c',$row->$rowkey) : $row->$rowkey;
+					$val = ($rowkey=='last_sent') ? date('d.m.Y H:i:s',$row->$rowkey) : $row->$rowkey;
 				} else {
 					$val = '-';
 				}
